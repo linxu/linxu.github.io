@@ -107,10 +107,6 @@ ul#skills li.s10:after {
   content: "10%";
 }
 
-ul#skills li span {
-  /* display: none; */
-}
-
 ul#skills li:hover {
   background: #222;
 }
