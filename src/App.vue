@@ -4,6 +4,7 @@
     <div id="wrapper">
       <locale />
       <Biography />
+      <Kills />
     </div>
     <Footer />
   </div>
@@ -14,6 +15,7 @@ import Locale from "./components/Locale.vue";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Biography from "./components/Biography.vue";
+import Kills from "./components/Kills.vue";
 
 export default {
   name: "app",
@@ -21,7 +23,8 @@ export default {
     Locale,
     Header,
     Footer,
-    Biography
+    Biography,
+    Kills
   }
 };
 </script>
