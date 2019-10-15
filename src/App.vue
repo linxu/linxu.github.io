@@ -5,6 +5,7 @@
       <locale />
       <Biography />
       <Kills />
+      <Jobs />
     </div>
     <Footer />
   </div>
@@ -16,6 +17,7 @@ import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Biography from "./components/Biography.vue";
 import Kills from "./components/Kills.vue";
+import Jobs from "./components/Jobs.vue";
 
 export default {
   name: "app",
@@ -24,7 +26,8 @@ export default {
     Header,
     Footer,
     Biography,
-    Kills
+    Kills,
+    Jobs
   }
 };
 </script>

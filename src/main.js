@@ -1,21 +1,15 @@
 import Vue from 'vue'
-import VueI18n from 'vue-i18n'
 import App from './App.vue'
-import en from '@/lang/en'
-import zh from '@/lang/zh'
+import i18n from './i18n'
+import store from './store'
 
 Vue.config.productionTip = false
-Vue.use(VueI18n)
 
-const i18n = new VueI18n({
-  locale: 'en',
-  messages: {
-    en: en,
-    zh: zh
-  }
-})
-
-new Vue({
+window.vm = new Vue({
   i18n,
+  store,
   render: h => h(App),
 }).$mount('#app')
+
+store.commit('changeLang')
+
