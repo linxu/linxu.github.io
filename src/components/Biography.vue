@@ -6,6 +6,7 @@
       <Socials />
       <p>{{ $t('bio.introduce') }}</p>
     </div>
+    <div class="clear"/>
   </div>
 </template>
 

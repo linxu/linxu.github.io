@@ -7,6 +7,7 @@
         <span>{{ item.name }}</span>
       </li>
     </ul>
+    <div class="clear"/>
   </div>
 </template>
 

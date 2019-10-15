@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h2 id="clock" class="sectionHead">{{ $t('job.title') }}</h2>
+    <h2 id="learn" class="sectionHead">{{ $t('school.title') }}</h2>
 
-    <ul id="jobs">
-      <li v-for="item in data.job.jobs" :key="item.name">
+    <ul id="schools">
+      <li v-for="item in data.school.schools" :key="item.name">
         <div class="details">
           <h3>{{item.name}}</h3>
-          <h4>{{item.role}}</h4>
+          <h4>{{item.level}}</h4>
           <h5>{{item.date}}</h5>
         </div>
         <p>{{item.desc}}</p>
@@ -19,40 +19,31 @@
 <script>
 import { mapState } from "vuex";
 export default {
-  name: "Jobs",
+  name: "Schools",
   computed: mapState(["data"])
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h2#clock:before {
-  background-position: -45px top;
+h2#learn:before {
+  background-position: right top;
 }
-ul#jobs,
-ul#schools,
-ul#recommends,
-ul#seenOn {
+ul#schools {
   margin: 0;
   list-style: none;
 }
 
-ul#jobs li,
-ul#schools li,
-ul#recommends li {
+ul#schools li {
   margin: 0 0 20px 0;
   clear: both;
 }
 
-ul#jobs li .details,
-ul#schools li .details,
-ul#recommends li .details {
+ul#schools li .details {
   float: left;
   width: 40%;
 }
-ul#jobs li p,
-ul#schools li > p,
-ul#recommends li > p {
+ul#schools li > p {
   float: right;
   width: 57%;
   margin-bottom: 25px;
@@ -62,11 +53,12 @@ ul#recommends li > p {
   font-style: italic;
 }
 
-body.respond ul#jobs li .details {
+body.respond ul#schools li .details {
   float: none;
   width: 100%;
 }
-body.respond ul#jobs li p {
+
+body.respond ul#schools li > p {
   float: none;
   width: 100%;
   margin-bottom: 50px;

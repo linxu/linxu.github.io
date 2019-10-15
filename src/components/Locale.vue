@@ -23,7 +23,7 @@ export default {
 .locale {
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 60px;
 }
 a {
   font-size: 13px;
@@ -32,5 +32,8 @@ a {
 a.active {
   color: #000;
   text-decoration: underline;
+}
+body.respond .locale {
+  right: 30px;
 }
 </style>

@@ -23,5 +23,19 @@ export default {
         date: 'Jan 2010 - Jan 2011',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo nibh, mattis sit amet consequat a, varius vitae metus. Proin pharetra sodales pellentesque.'
       }]
+    },
+    school: {
+      title: '毕业院校',
+      schools: [{
+        name: '厦门大学',
+        level: 'Degree Title - Concentration',
+        date: '2005 - 2007',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo nibh, mattis sit amet consequat a, varius vitae metus. Proin pharetra sodales pellentesque.'
+      }, {
+        name: '福建师范大学',
+        level: 'Lead Front-End Developer - City, State',
+        date: '2001 - 2004',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo nibh, mattis sit amet consequat a, varius vitae metus. Proin pharetra sodales pellentesque.'
+      }]
     }
   }

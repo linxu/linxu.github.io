@@ -6,6 +6,7 @@
       <Biography />
       <Kills />
       <Jobs />
+      <Schools />
     </div>
     <Footer />
   </div>
@@ -18,6 +19,7 @@ import Footer from "./components/Footer.vue";
 import Biography from "./components/Biography.vue";
 import Kills from "./components/Kills.vue";
 import Jobs from "./components/Jobs.vue";
+import Schools from "./components/Schools.vue";
 
 export default {
   name: "app",
@@ -27,7 +29,8 @@ export default {
     Footer,
     Biography,
     Kills,
-    Jobs
+    Jobs,
+    Schools
   }
 };
 </script>
