@@ -3,7 +3,7 @@
     <h2 id="clock" class="sectionHead">{{ $t('job.title') }}</h2>
 
     <ul id="jobs">
-      <li v-for="item in jobs" :key="item.name" >
+      <li v-for="item in data.job.jobs" :key="item.name">
         <div class="details">
           <h3>{{item.name}}</h3>
           <h4>{{item.role}}</h4>
@@ -16,19 +16,18 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "Jobs",
-  data() {
-    return {
-      jobs: this.$i18n.getLocaleMessage(this.$i18n.locale).job.jobs
-    };
-  },
-  mounted: function() {}
+  computed: mapState(["data"])
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h2#clock:before {
+  background-position: -45px top;
+}
 ul#jobs,
 ul#schools,
 ul#recommends,

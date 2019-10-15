@@ -5,11 +5,8 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-window.vm = new Vue({
+new Vue({
   i18n,
   store,
   render: h => h(App),
 }).$mount('#app')
-
-store.commit('changeLang')
-

@@ -12,5 +12,6 @@ const i18n = new VueI18n({
       zh: zh
     }
   })
-
+  
+window.i18n = i18n;  
 export default i18n

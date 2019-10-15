@@ -5,11 +5,11 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
     state: {
-        data: {}
+        data: window.i18n.getLocaleMessage(window.i18n.locale)
     },
     mutations: {
         changeLang (state) {
-            state.data = window.vm.$i18n.getLocaleMessage(window.vm.$i18n.locate)
+            state.data = window.i18n.getLocaleMessage(window.i18n.locale)
         }
     }
 })
