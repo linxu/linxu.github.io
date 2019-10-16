@@ -10,12 +10,6 @@ import Velocity from "velocity-animate";
 import Socials from "./Socials.vue";
 export default {
   name: "Header",
-  data() {
-    return {
-      show: false,
-      hide: false
-    };
-  },
   components: {
     Socials
   },
@@ -28,20 +22,13 @@ export default {
   methods: {
     handleScroll() {
       var sticker = document.getElementById("sticker");
+      Velocity(sticker, "stop", true);
       var scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop;
       if (scrollTop > 140) {
-        if (!this.show) {
-          Velocity(sticker, { top: "0px" }, { duration: 500 });
-          this.show = true;
-          this.hide = false;
-        }
+        Velocity(sticker, { top: "0px" }, { duration: 500 });
       } else {
-        if (!this.hide) {
-           Velocity(sticker, { top: "-60px" }, { duration: 500 });
-           this.hide = true;
-           this.show = false;
-        }
+        Velocity(sticker, { top: "-60px" }, { duration: 500 });
       }
     }
   }
