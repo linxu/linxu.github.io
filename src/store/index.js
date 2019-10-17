@@ -9,7 +9,6 @@ const store = new Vuex.Store({
     },
     mutations: {
         changeLang (state) {
-            window.console.log(this.$root);
             state.data = window.i18n.getLocaleMessage(window.i18n.locale)
         }
     }

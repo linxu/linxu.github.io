@@ -4,9 +4,11 @@
     <div id="wrapper">
       <locale />
       <Biography />
+      <Schools />
       <Kills />
       <Jobs />
-      <Schools />
+      <Projects />
+      <Contact />
     </div>
     <Footer />
   </div>
@@ -20,6 +22,8 @@ import Biography from "./components/Biography.vue";
 import Kills from "./components/Kills.vue";
 import Jobs from "./components/Jobs.vue";
 import Schools from "./components/Schools.vue";
+import Projects from "./components/Projects.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "app",
@@ -30,7 +34,9 @@ export default {
     Biography,
     Kills,
     Jobs,
-    Schools
+    Schools,
+    Projects,
+    Contact
   }
 };
 </script>

@@ -37,5 +37,18 @@ export default {
       date: '2001 - 2004',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo nibh, mattis sit amet consequat a, varius vitae metus. Proin pharetra sodales pellentesque.'
     }]
+  },
+  project: {
+    title: 'Project',
+    projects: [{
+      name: 'project name',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo nibh, mattis sit amet consequat a, varius vitae metus. Proin pharetra sodales pellentesque.'
+    }, {
+      name: 'project other name',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut justo nibh, mattis sit amet consequat a, varius vitae metus. Proin pharetra sodales pellentesque.'
+    }]
+  },
+  contact: {
+    title: 'Contact Me'
   }
 }
