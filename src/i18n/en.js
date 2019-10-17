@@ -49,6 +49,11 @@ export default {
     }]
   },
   contact: {
-    title: 'Contact Me'
+    title: 'Contact Me',
+    name: 'Name',
+    email: 'Email',
+    phone: 'Phone',
+    message: 'Message',
+    sendBtn: 'SEND MESSAGE'
   }
 }

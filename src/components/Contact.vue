@@ -7,33 +7,33 @@
         <div id="contactInfo">
           <p>
             <label class="smallInput" for="name">
-              Name
+              {{ $t('contact.name') }}
               <span class="required">*</span>
             </label>
             <br />
             <input type="text" name="name" id="name" value class="input" />
           </p>
           <p>
-            <label class="smallInput" for="email">Email</label>
+            <label class="smallInput" for="email">{{ $t('contact.email') }}</label>
             <br />
             <input type="text" name="email" id="email" value class="input" />
           </p>
           <p>
-            <label class="smallInput" for="phone">Phone</label>
+            <label class="smallInput" for="phone">{{ $t('contact.phone') }}</label>
             <br />
             <input type="text" name="phone" id="phone" value class="input" />
           </p>
         </div>
         <p id="emailMessage">
           <label class="smallInput" for="message">
-            Message
+            {{ $t('contact.message') }}
             <span class="required">*</span>
           </label>
           <br />
           <textarea name="message" id="message" class="input"></textarea>
         </p>
 
-        <input name="send" id="submit_btn" type="button" value="Send Message" @click="submit" />
+        <input name="send" id="submit_btn" type="button" :value="$t('contact.sendBtn')" @click="sendMessage" />
       </form>
     </div>
     <div class="clear" />
@@ -44,7 +44,7 @@
 export default {
   name: "Contact",
   methods: {
-    submit() {
+    sendMessage() {
       var name = document.getElementById("name");
       var message = document.getElementById("message");
       var email = document.getElementById("email");
