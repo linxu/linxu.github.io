@@ -36,7 +36,7 @@ import Projects from "@/components/Projects.vue";
 import Contact from "@/components/Contact.vue";
 
 export default {
-  name: "Home",
+  name: "Resume",
   components: {
     Locale,
     Header,
