@@ -54,6 +54,7 @@ export default {
     email: '邮箱',
     phone: '电话',
     message: '消息',
-    sendBtn: '发送消息'
+    sendBtn: '发送消息',
+    send_success_msg: '消息发送成功'
   }
 }

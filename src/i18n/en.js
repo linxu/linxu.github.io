@@ -54,6 +54,7 @@ export default {
     email: 'Email',
     phone: 'Phone',
     message: 'Message',
-    sendBtn: 'SEND MESSAGE'
+    sendBtn: 'SEND MESSAGE',
+    send_success_msg: 'SEND MESSAGE SUCCESS'
   }
 }

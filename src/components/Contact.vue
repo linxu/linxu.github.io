@@ -41,8 +41,16 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+import Vue from 'vue';
+import { Toast } from 'vant';
+import 'vant/lib/toast/style';
+
+Vue.use(Toast);
+
 export default {
   name: "Contact",
+  computed: mapState(["data"]),
   methods: {
     sendMessage() {
       var name = document.getElementById("name");
@@ -59,6 +67,7 @@ export default {
         message.className = "input error";
         return;
       }
+      Toast(this.data.contact.send_success_msg);
       window.console.log({
         name: name.value,
         message: message.value,
