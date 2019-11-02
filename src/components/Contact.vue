@@ -33,7 +33,13 @@
           <textarea name="message" id="message" class="input"></textarea>
         </p>
 
-        <input name="send" id="submit_btn" type="button" :value="$t('contact.sendBtn')" @click="sendMessage" />
+        <input
+          name="send"
+          id="submit_btn"
+          type="button"
+          :value="$t('contact.sendBtn')"
+          @click="sendMessage"
+        />
       </form>
     </div>
     <div class="clear" />
@@ -42,11 +48,14 @@
 
 <script>
 import { mapState } from "vuex";
-import Vue from 'vue';
-import { Toast } from 'vant';
-import 'vant/lib/toast/style';
+import Vue from "vue";
+import { Toast } from "vant";
+import "vant/lib/toast/style";
+import axios from "axios";
 
 Vue.use(Toast);
+
+axios.defaults.baseURL = "http://122.51.87.166:8888";
 
 export default {
   name: "Contact",
@@ -67,12 +76,16 @@ export default {
         message.className = "input error";
         return;
       }
-      Toast(this.data.contact.send_success_msg);
-      window.console.log({
+      var data = {
         name: name.value,
         message: message.value,
         email: email.value,
         phone: phone.value
+      };
+      var me = this;
+      axios.post("/message/send", data).then(function(data) {
+        Toast(me.data.contact.send_success_msg);
+        window.console.log(data);
       });
     }
   }
