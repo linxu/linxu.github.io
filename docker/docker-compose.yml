@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nginx:
+    restart: always
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - /home/ubuntu/docker/nginx/log:/var/log/nginx
+      - /home/ubuntu/www:/var/www
