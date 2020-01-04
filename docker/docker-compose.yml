@@ -7,4 +7,4 @@ services:
       - "80:80"
     volumes:
       - /home/ubuntu/docker/nginx/log:/var/log/nginx
-      - /home/ubuntu/www:/usr/share/nginx/htmle
+      - /home/ubuntu/www:/usr/share/nginx/html
