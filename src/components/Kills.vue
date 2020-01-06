@@ -3,7 +3,7 @@
     <h2 id="tools" class="sectionHead">{{ $t('skill.title') }}</h2>
 
     <ul id="skills">
-      <li class="skill" v-for="item in skills" :key="item.name" :class="'s' + item.weight">
+      <li class="skill" v-for="item in data.skill.skills" :key="item.name" :class="'s' + item.weight">
         <span>{{ item.name }}</span>
       </li>
     </ul>
@@ -12,32 +12,24 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import Velocity from "velocity-animate";
 export default {
   name: "Kills",
-  data() {
-    return {
-      skills: [
-        {
-          name: "JAVA",
-          weight: 80
-        },
-        {
-          name: "HTML5",
-          weight: 90
-        },
-        {
-          name: "SPRING",
-          weight: 100
-        }
-      ]
-    };
-  },
-  mounted: function() {
-    var tags = document.getElementsByClassName("skill");
-    for (var i = 0; i < tags.length; i++) {
-      Velocity(tags[i], { right: "0%" }, { duration: 800, delay: 100 * i });
+  computed: mapState(["data"]),
+  methods: {
+    onShow : function() {
+      var tags = document.getElementsByClassName("skill");
+      for (var i = 0; i < tags.length; i++) {
+        Velocity(tags[i], { right: "0%" }, { duration: 800, delay: 100 * i });
+      }
     }
+  }, 
+  mounted: function() {
+    this.onShow();
+  },
+  updated: function() {
+    this.onShow();
   }
 };
 </script>

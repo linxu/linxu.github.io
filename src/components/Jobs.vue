@@ -7,9 +7,8 @@
         <div class="details">
           <h3>{{item.name}}</h3>
           <h4>{{item.role}}</h4>
-          <h5>{{item.date}}</h5>
         </div>
-        <p>{{item.desc}}</p>
+        <p>{{item.date}}</p>
       </li>
     </ul>
     <div class="clear"/>
@@ -29,33 +28,24 @@ export default {
 h2#clock:before {
   background-position: -45px top;
 }
-ul#jobs,
-ul#schools,
-ul#recommends,
-ul#seenOn {
+ul#jobs {
   margin: 0;
   list-style: none;
 }
 
-ul#jobs li,
-ul#schools li,
-ul#recommends li {
+ul#jobs li {
   margin: 0 0 20px 0;
   clear: both;
 }
 
-ul#jobs li .details,
-ul#schools li .details,
-ul#recommends li .details {
+ul#jobs li .details {
   float: left;
-  width: 40%;
+  width: 50%;
+  margin-bottom: 15px;
 }
-ul#jobs li p,
-ul#schools li > p,
-ul#recommends li > p {
+ul#jobs li p {
   float: right;
-  width: 57%;
-  margin-bottom: 25px;
+  width: 50%;
 }
 
 .details h5 {
@@ -65,11 +55,10 @@ ul#recommends li > p {
 body.respond ul#jobs li .details {
   float: none;
   width: 100%;
+  margin-bottom: 0;
 }
 body.respond ul#jobs li p {
   float: none;
   width: 100%;
-  margin-bottom: 50px;
-  margin-top: 10px;
 }
 </style>

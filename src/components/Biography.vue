@@ -3,7 +3,7 @@
     <h2 id="titleName" class="sectionHead">{{ $t('bio.name') }}</h2>
     <div id="bio">
       <h2>{{ $t('bio.position') }}</h2>
-      <Socials />
+      <!-- <Socials /> -->
       <p>{{ $t('bio.introduce') }}</p>
     </div>
     <div class="clear"/>
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import Socials from "./Socials.vue";
+// import Socials from "./Socials.vue";
 export default {
   name: "Biography",
   components: {
-    Socials
+    // Socials
   }
 };
 </script>
@@ -35,8 +35,8 @@ export default {
 #bio p {
   clear: left;
   margin: 40px auto;
-  padding: 40px 45px;
-  max-width: 600px;
+  padding: 20px;
+  max-width: 650px;
   background: #fbfbfb;
   border: 1px solid #f3f3f3;
   border-radius: 8px;

@@ -3,7 +3,9 @@
     <h2 id="ribbon" class="sectionHead">{{ $t('project.title') }}</h2>
 
     <ul id="honorsAwards">
-      <li v-for="item in data.project.projects" :key="item.name">{{item.name}}</li>
+      <li v-for="item in data.project.projects" :key="item.name">
+          <a :href="item.link" target="_blank">{{item.name}}</a>
+      </li>
     </ul>
     <div class="clear" />
   </div>

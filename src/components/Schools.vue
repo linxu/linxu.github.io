@@ -9,7 +9,6 @@
           <h4>{{item.level}}</h4>
           <h5>{{item.date}}</h5>
         </div>
-        <p>{{item.desc}}</p>
       </li>
     </ul>
     <div class="clear"/>
@@ -36,32 +35,16 @@ ul#schools {
 
 ul#schools li {
   margin: 0 0 20px 0;
-  clear: both;
-}
-
-ul#schools li .details {
   float: left;
-  width: 40%;
-}
-ul#schools li > p {
-  float: right;
-  width: 57%;
-  margin-bottom: 25px;
+  width: 50%;
 }
 
 .details h5 {
   font-style: italic;
 }
 
-body.respond ul#schools li .details {
+body.respond ul#schools li {
   float: none;
   width: 100%;
-}
-
-body.respond ul#schools li > p {
-  float: none;
-  width: 100%;
-  margin-bottom: 50px;
-  margin-top: 10px;
 }
 </style>
