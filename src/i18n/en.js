@@ -1,6 +1,6 @@
 export default {
   message: {
-    copyright: '2019 - Designed and developed by Alfred.lin'
+    copyright: '2019 - Designed and developed by Linxu'
   },
   bio: {
     name: 'Linxu',

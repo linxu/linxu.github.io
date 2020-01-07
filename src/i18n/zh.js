@@ -1,53 +1,53 @@
 export default {
   message: {
-    copyright: '2019 - Designed and developed by Alfred.lin'
+    copyright: '2019 - Designed and developed by Linxu'
   },
   bio: {
     name: '林 旭',
     position: 'Java高级工程师 / 架构师',
-    introduce: '本人毕业于福州大学，软件工程专业，2009年开始从事软件开发工作,做事靠谱。目前定居在厦门。'
+    introduce: '本人毕业于福州大学，软件工程专业，2009年开始从事软件开发工作，做事靠谱。目前定居在厦门。'
   },
   skill: {
     title: '专业技能',
     skills: [
       {
-        name: "熟练Spring Boot、Spring Cloud框架搭建及开发",
+        name: "Spring Boot、Spring Cloud",
         weight: 100
       },
       {
-        name: "熟练Shiro安全框架",
+        name: "Shiro",
         weight: 100
       },
       {
-        name: "熟练Mysql、Mongodb、Redis数据库",
+        name: "Mysql、Mongodb、Redis",
         weight: 100
       },
       {
-        name: "熟练RabbitMQ消息队列服务",
+        name: "RabbitMQ",
         weight: 100
       },
       {
-        name: "熟练Maven工具",
+        name: "Maven",
         weight: 100
       },
       {
-        name: "熟练Git、GitFlow工具",
+        name: "Git、GitFlow",
         weight: 100
       },
       {
-        name: "熟练Vue、Jquery、Bootstrap前端技术栈",
+        name: "Vue、Jquery、Bootstrap",
         weight: 100
       },
       {
-        name: "熟悉JavaFx、Android、Electron客户端技术",
+        name: "JavaFx、Android、Electron",
         weight: 90
       },
       {
-        name: "熟悉Linux常用命令及部署",
+        name: "Linux",
         weight: 90
       },
       {
-        name: "熟悉Docker、Docker Compose使用",
+        name: "Docker、Docker Compose",
         weight: 90
       }
     ]
