@@ -55,7 +55,7 @@ import axios from "axios";
 
 Vue.use(Toast);
 
-axios.defaults.baseURL = "http://122.51.87.166:8080";
+axios.defaults.baseURL = "http://www.linxu.vip/api";
 
 export default {
   name: "Contact",
