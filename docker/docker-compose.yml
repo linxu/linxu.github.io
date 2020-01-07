@@ -8,3 +8,4 @@ services:
     volumes:
       - /home/ubuntu/docker/nginx/log:/var/log/nginx
       - /home/ubuntu/www:/usr/share/nginx/html
+      - /home/ubuntu/www/docker/conf:/etc/nginx/conf.d
