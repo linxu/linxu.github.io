@@ -65,7 +65,7 @@ h2#titleName:before {
   top: 10px;
   right: 15px;
 }
-body.respond #sticker {
+/* body.respond #sticker {
   display: none;
-}
+} */
 </style>
