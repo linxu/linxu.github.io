@@ -73,10 +73,6 @@ body {
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.2em;
   background-color: #f3f3f3;
-  background-image: url("../assets/bg.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: 0px 0px;
   color: #444;
   height: 100%;
   width: auto;

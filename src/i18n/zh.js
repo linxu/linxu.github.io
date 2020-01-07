@@ -11,43 +11,43 @@ export default {
     title: '专业技能',
     skills: [
       {
-        name: "Spring Boot、Spring Cloud",
+        name: "熟练Spring Boot、Spring Cloud",
         weight: 100
       },
       {
-        name: "Shiro",
+        name: "熟练Shiro",
         weight: 100
       },
       {
-        name: "Mysql、Mongodb、Redis",
+        name: "熟练Mysql、Mongodb、Redis",
         weight: 100
       },
       {
-        name: "RabbitMQ",
+        name: "熟练RabbitMQ",
         weight: 100
       },
       {
-        name: "Maven",
+        name: "熟练Maven",
         weight: 100
       },
       {
-        name: "Git、GitFlow",
+        name: "熟练Git、GitFlow",
         weight: 100
       },
       {
-        name: "Vue、Jquery、Bootstrap",
+        name: "熟练Vue、Jquery、Bootstrap",
         weight: 100
       },
       {
-        name: "JavaFx、Android、Electron",
+        name: "熟悉JavaFx、Android、Electron",
         weight: 90
       },
       {
-        name: "Linux",
+        name: "熟悉Linux",
         weight: 90
       },
       {
-        name: "Docker、Docker Compose",
+        name: "熟悉Docker、Docker Compose",
         weight: 90
       }
     ]
