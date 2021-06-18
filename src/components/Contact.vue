@@ -48,12 +48,9 @@
 
 <script>
 import { mapState } from "vuex";
-import Vue from "vue";
 import { Toast } from "vant";
 import "vant/lib/toast/style";
 import axios from "axios";
-
-Vue.use(Toast);
 
 axios.defaults.baseURL = "http://www.linxu.vip/api";
 
