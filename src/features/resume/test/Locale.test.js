@@ -4,7 +4,7 @@ import { Locale } from '../components/Locale';
 import WithStoreAndTheme from "../../../common/util/testing";
 
 test("Render Locale Component", async () => {
-  const { container } = render(
+  render(
     <WithStoreAndTheme>
       <Locale />
     </WithStoreAndTheme>
