@@ -7,9 +7,7 @@ const AppRoute = ({ component: Component, ...rest }) => {
     <Route
       {...rest}
       render={(props) => {
-        return (
-          <Component {...rest} {...props} />
-        );
+        return <Component {...rest} {...props} />;
       }}
     />
   );

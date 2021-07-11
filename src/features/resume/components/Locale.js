@@ -1,8 +1,8 @@
-import { isNil } from 'lodash';
-import React, { useEffect, useState } from 'react';
+import { isNil } from "lodash";
+import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { loadResume } from "../state/ResumeSlice";
-import { ScLink } from '../../../common/components/Link';
+import { ScLink } from "../../../common/components/Link";
 import styled from "styled-components";
 
 const ScLocale = styled.div`
@@ -17,33 +17,35 @@ export function Locale() {
 
   useEffect(() => {
     if (!isNil(lang)) {
-      dispatch(loadResume({url: `resume_${lang}.json`}));
+      dispatch(loadResume({ url: `resume_${lang}.json` }));
     }
   }, [dispatch, lang]);
 
   const changeLang = (language) => {
     setLang(language);
-  }
+  };
 
   return (
     <ScLocale>
-        <ScLink
-          data-testid="lang-zh"
-          active={lang === 'zh'} 
-          onClick={() => {
-            changeLang("zh");
-          }}>
-            中文
-        </ScLink>
-         /  
-        <ScLink
-          data-testid="lang-en"
-          active={lang === 'en'} 
-          onClick={() => {
-            changeLang("en");
-          }}>
-            English
-        </ScLink>
+      <ScLink
+        data-testid="lang-zh"
+        active={lang === "zh"}
+        onClick={() => {
+          changeLang("zh");
+        }}
+      >
+        中文
+      </ScLink>
+      /
+      <ScLink
+        data-testid="lang-en"
+        active={lang === "en"}
+        onClick={() => {
+          changeLang("en");
+        }}
+      >
+        English
+      </ScLink>
     </ScLocale>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { Locale } from '../components/Locale';
+import { Locale } from "../components/Locale";
 import WithStoreAndTheme from "../../../common/util/testing";
 
 test("Render Locale Component", async () => {

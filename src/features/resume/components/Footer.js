@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
 
 const ScFooter = styled.footer`
@@ -11,12 +11,8 @@ const ScFooter = styled.footer`
 `;
 
 export function Footer(props) {
-  const {data} = props;
+  const { data } = props;
   return (
-    <ScFooter id="copyright">
-      {data.message && (
-        data.message.copyright
-      )}
-    </ScFooter>
+    <ScFooter id="copyright">{data.message && data.message.copyright}</ScFooter>
   );
 }

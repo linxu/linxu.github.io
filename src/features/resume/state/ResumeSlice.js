@@ -9,7 +9,7 @@ const initialState = {
 export const loadResume = createAsyncThunk(
   "resume/loadResume",
   async (params, thunkAPI) => {
-    return await callApi(thunkAPI, params.url, {fullEndpoint : true});
+    return await callApi(thunkAPI, params.url, { fullEndpoint: true });
   }
 );
 

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import { titleCssMixin, titleBeforeCssMixin } from '../util/CssMixins';
+import { titleCssMixin, titleBeforeCssMixin } from "../util/CssMixins";
 
 const ScHeader = styled.header`
   position: fixed;

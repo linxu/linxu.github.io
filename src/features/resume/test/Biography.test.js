@@ -1,14 +1,14 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { Biography } from '../components/Biography';
+import { Biography } from "../components/Biography";
 import WithStoreAndTheme from "../../../common/util/testing";
 
 const data = {
-  "bio": {
-    "name": "Test Name",
-    "position": "",
-    "introduce": ""
-  }
+  bio: {
+    name: "Test Name",
+    position: "",
+    introduce: "",
+  },
 };
 
 test("Render Biography Component", async () => {

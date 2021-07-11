@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import { useSelector } from "react-redux";
-import { Biography } from './Biography';
-import { Footer } from './Footer';
-import { Header } from './Header';
+import { Biography } from "./Biography";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
 import { Locale } from "./Locale";
 import { selectResume } from "../state/ResumeSlice";
 import styled from "styled-components";

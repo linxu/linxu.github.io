@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { ThemeProvider } from "styled-components";
-import Routes from './Routes';
+import Routes from "./Routes";
 import { getTheme } from "../theme";
 
 function App() {
