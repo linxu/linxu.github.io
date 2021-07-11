@@ -1,0 +1,11 @@
+{
+  "ignoreTestFiles": [
+    "helpers.js"
+  ],
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 80000,
+  "requestTimeout": 10000,
+  "responseTimeout": 80000,
+  "chromeWebSecurity": false,
+  "retries": 4
+}
