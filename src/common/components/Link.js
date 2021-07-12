@@ -3,12 +3,10 @@ import styled, { css } from "styled-components";
 
 export const ScLink = styled.a`
   cursor: pointer;
-  color: ${({ color, theme }) =>
-    color ? theme.colors[color] : theme.colors.mediumBlack};
+  color: ${({ color, theme }) => (color ? theme.colors[color] : theme.colors.mediumBlack)};
   text-decoration: ${({ underline }) => (underline ? "underline" : "none")};
-  margin: ${({ margin }) => (margin ? margin : "auto")};
-  ${({ active }) =>
-    active &&
+  margin: ${({ margin }) => (margin || "auto")};
+  ${({ active }) => active &&
     css`
       text-decoration: underline;
     `};

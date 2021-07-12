@@ -7,25 +7,20 @@ import styled, { css } from "styled-components";
 export const ScText = styled.p.attrs((props) => ({
   as: props.element ? props.element : "p",
 }))`
-  ${({ fontSize, theme }) =>
-    fontSize
-      ? theme.typography.fontSize[fontSize]
-      : theme.typography.fontSize.tiny};
-  color: ${({ color, theme }) =>
-    theme.colors[color] ? theme.colors[color] : theme.colors.black};
+  ${({ fontSize, theme }) => (fontSize
+    ? theme.typography.fontSize[fontSize]
+    : theme.typography.fontSize.tiny)};
+  color: ${({ color, theme }) => (theme.colors[color] ? theme.colors[color] : theme.colors.black)};
   font-family: ${({ theme }) => theme.typography.main};
-  ${({ bold }) =>
-    bold &&
+  ${({ bold }) => bold &&
     css`
       font-weight: bold;
     `};
-  ${({ underline }) =>
-    underline &&
+  ${({ underline }) => underline &&
     css`
       text-decoration: underline;
     `};
-  ${({ cursor }) =>
-    cursor &&
+  ${({ cursor }) => cursor &&
     css`
       cursor: pointer;
     `};

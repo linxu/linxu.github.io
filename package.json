@@ -34,7 +34,7 @@
     "cypress-headless": "cypress run --env environment=local",
     "cypress-headless:mock": "cypress run --env environment=local --spec cypress/**/*.mock.spec.js",
     "cypress-headless:e2e": "cypress run --env environment=local --spec cypress/**/*.e2e.spec.js",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint --fix src/**/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
