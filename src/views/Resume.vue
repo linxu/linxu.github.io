@@ -2,7 +2,7 @@
   <div>
     <Header />
     <div id="wrapper">
-      <locale />
+      <Locale />
       <Biography />
       <Schools />
       <Kills />
