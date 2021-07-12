@@ -137,6 +137,4 @@ export const resumeTheme = {
   },
 };
 
-export const getTheme = () => {
-  return { ...baseTheme, ...resumeTheme };
-};
+export const getTheme = () => ({ ...baseTheme, ...resumeTheme });
