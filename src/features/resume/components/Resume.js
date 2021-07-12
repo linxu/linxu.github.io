@@ -5,6 +5,7 @@ import { Biography } from "./Biography";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Locale } from "./Locale";
+import { Schools } from "./Schools";
 import { selectResume } from "../state/ResumeSlice";
 
 const ScBody = styled.div`
@@ -25,6 +26,7 @@ export function Resume() {
       <ScBody>
         <Locale />
         <Biography data={resume.data} />
+        <Schools data={resume.data} />
       </ScBody>
       <Footer data={resume.data} />
     </>

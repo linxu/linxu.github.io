@@ -9,7 +9,7 @@ export const ScText = styled.p.attrs((props) => ({
 }))`
   ${({ fontSize, theme }) => (fontSize
     ? theme.typography.fontSize[fontSize]
-    : theme.typography.fontSize.tiny)};
+    : "")};
   color: ${({ color, theme }) => (theme.colors[color] ? theme.colors[color] : theme.colors.black)};
   font-family: ${({ theme }) => theme.typography.main};
   ${({ bold }) => bold &&

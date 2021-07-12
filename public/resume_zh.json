@@ -1,10 +1,22 @@
 {
-    "message": {
-      "copyright": "2019 - Designed and developed by Linxu"
-    },
-    "bio": {
-      "name": "林 旭",
-      "position": "Java高级工程师 / 架构师",
-      "introduce": "本人毕业于福州大学，软件工程专业，2009年开始从事软件开发工作，做事靠谱。目前定居在厦门。"
-    }
+  "message": {
+    "copyright": "2019 - Designed and developed by Linxu"
+  },
+  "bio": {
+    "name": "林 旭",
+    "position": "Java高级工程师 / 架构师",
+    "introduce": "本人毕业于福州大学，软件工程专业，2009年开始从事软件开发工作，做事靠谱。目前定居在厦门。"
+  },
+  "school": {
+    "title": "毕业院校",
+    "schools": [{
+      "name": "福州大学（非全日制）",
+      "level": "软件工程 - 本科",
+      "date": "2011 - 2014"
+    }, {
+      "name": "福建师范大学（全日制）",
+      "level": "计算机科学与技术 - 大专",
+      "date": "2003 - 2006"
+    }]
+  }
 }

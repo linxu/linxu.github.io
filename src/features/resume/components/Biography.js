@@ -6,7 +6,6 @@ import { titleCssMixin, titleBeforeCssMixin } from "../util/CssMixins";
 
 const ScTitle = styled.div`
   ${titleCssMixin}
-  margin: 20px -60px 10px;
   &:before {
     ${titleBeforeCssMixin}
     background-position: -90px bottom;

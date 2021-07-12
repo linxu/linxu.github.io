@@ -9,6 +9,7 @@ export const titleCssMixin = css`
   border-left: 52px solid ${({ theme }) => theme.colors.black};
   font: bold 20px/12px "verdana", sans-serif;
   padding: 1px 0 0 8px;
+  margin: 20px -60px 10px;
 `;
 
 export const titleBeforeCssMixin = css`
