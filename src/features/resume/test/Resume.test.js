@@ -7,7 +7,7 @@ test("Render Resume Component", async () => {
   const tree = render(
     <WithStoreAndTheme>
       <Resume />
-    </WithStoreAndTheme>
+    </WithStoreAndTheme>,
   );
   expect(tree.container).not.toBeEmpty();
 });

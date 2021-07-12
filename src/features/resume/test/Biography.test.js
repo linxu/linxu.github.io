@@ -15,7 +15,7 @@ test("Render Biography Component", async () => {
   const tree = render(
     <WithStoreAndTheme>
       <Biography data={data} />
-    </WithStoreAndTheme>
+    </WithStoreAndTheme>,
   );
   expect(tree.container).toHaveTextContent(data.bio.name);
 });

@@ -7,7 +7,7 @@ test("Render Locale Component", async () => {
   render(
     <WithStoreAndTheme>
       <Locale />
-    </WithStoreAndTheme>
+    </WithStoreAndTheme>,
   );
   const style = "text-decoration: underline";
   const zhNode = await screen.getByTestId("lang-zh");
