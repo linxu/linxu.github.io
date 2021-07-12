@@ -10,15 +10,12 @@ export const messageSlice = createSlice({
   reducers: {
     addError: (state, action) => {
       state.error = action.payload;
-      return state;
     },
     addWarn: (state, action) => {
       state.warn = action.payload;
-      return state;
     },
     addInfo: (state, action) => {
       state.info = action.payload;
-      return state;
     },
   },
 });

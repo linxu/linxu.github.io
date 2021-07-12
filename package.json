@@ -33,7 +33,8 @@
     "cypress": "cypress open --env environment=local",
     "cypress-headless": "cypress run --env environment=local",
     "cypress-headless:mock": "cypress run --env environment=local --spec cypress/**/*.mock.spec.js",
-    "cypress-headless:e2e": "cypress run --env environment=local --spec cypress/**/*.e2e.spec.js"
+    "cypress-headless:e2e": "cypress run --env environment=local --spec cypress/**/*.e2e.spec.js",
+    "lint": "eslint src/**/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +52,9 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^7.7.0"
+    "cypress": "^7.7.0",
+    "eslint": "7.30.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-plugin-react": "7.24.0"
   }
 }

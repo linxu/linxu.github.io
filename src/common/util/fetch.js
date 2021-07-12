@@ -34,12 +34,10 @@ function headers(ignoreContentType) {
   if (ignoreContentType) {
     return defaultHeaders;
   }
-  return Object.assign(
-    {
-      "Content-Type": "application/json",
-    },
-    defaultHeaders
-  );
+  return {
+    "Content-Type": "application/json",
+    ...defaultHeaders
+  };
 }
 
 /**
@@ -51,33 +49,31 @@ function headers(ignoreContentType) {
  * @return {object} response
  */
 export async function callApi(thunkAPI, endpoint, opt = {}) {
-  const ignoreContent = opt.ignoreContent;
-  const fullEndpoint = opt.fullEndpoint;
+  const { ignoreContent, fullEndpoint } = opt;
   const defaultOpt = {
     endpoint: apiEndpoint(endpoint, fullEndpoint),
     method: "GET",
     headers: headers(ignoreContent),
     formatJson: true,
   };
-  let options = merge(defaultOpt, opt);
+  const options = merge(defaultOpt, opt);
   try {
     const response = await fetch(options.endpoint, options);
     if (response.status === 401) {
       localStorage.clear();
     }
+    let data;
     if (response.ok) {
-      let data;
       if (options.formatJson) {
         data = await response.clone().json();
       } else {
         data = await response.clone().text();
       }
       return data;
-    } else {
-      let data = await response.clone().text();
-      thunkAPI.dispatch(addError(data));
-      return thunkAPI.rejectWithValue(data);
     }
+    data = await response.clone().text();
+    thunkAPI.dispatch(addError(data));
+    return thunkAPI.rejectWithValue(data);
   } catch (error) {
     thunkAPI.dispatch(addError(error.message));
     return thunkAPI.rejectWithValue(error.message);

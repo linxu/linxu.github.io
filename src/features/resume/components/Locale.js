@@ -1,9 +1,9 @@
 import { isNil } from "lodash";
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 import { useDispatch } from "react-redux";
 import { loadResume } from "../state/ResumeSlice";
 import { ScLink } from "../../../common/components/Link";
-import styled from "styled-components";
 
 const ScLocale = styled.div`
   position: absolute;
