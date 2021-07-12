@@ -7,5 +7,5 @@
   "requestTimeout": 10000,
   "responseTimeout": 80000,
   "chromeWebSecurity": false,
-  "retries": 4
+  "retries": 3
 }
