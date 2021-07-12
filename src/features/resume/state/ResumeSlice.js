@@ -8,7 +8,7 @@ const initialState = {
 
 export const loadResume = createAsyncThunk(
   "resume/loadResume",
-  async (params, thunkAPI) => callApi(thunkAPI, params.url, { fullEndpoint: true })
+  async (params, thunkAPI) => callApi(thunkAPI, params.url, { fullEndpoint: true }),
 );
 
 export const resumeSlice = createSlice({

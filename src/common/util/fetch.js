@@ -36,7 +36,7 @@ function headers(ignoreContentType) {
   }
   return {
     "Content-Type": "application/json",
-    ...defaultHeaders
+    ...defaultHeaders,
   };
 }
 
