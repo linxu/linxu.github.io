@@ -10,5 +10,11 @@ pipeline {
                 sh 'npm run build'
             }
         }
+        
+        stage('Start') {
+            steps {
+                sh 'npm run serve'
+            }
+        }
     }
 }
