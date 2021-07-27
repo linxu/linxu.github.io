@@ -4,9 +4,9 @@ pipeline {
     }
 
     stages {
-        stage('Test') {
+        stage('Build') {
             steps {
-                sh 'node --version'
+                sh 'npm run build'
             }
         }
     }
