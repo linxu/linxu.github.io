@@ -11,17 +11,17 @@
               <span class="required">*</span>
             </label>
             <br />
-            <input type="text" name="name" id="name" value class="input" />
+            <input type="text" name="name" ref="name" value class="input" />
           </p>
           <p>
             <label class="smallInput" for="email">{{ $t('contact.email') }}</label>
             <br />
-            <input type="text" name="email" id="email" value class="input" />
+            <input type="text" name="email" ref="email" value class="input" />
           </p>
           <p>
             <label class="smallInput" for="phone">{{ $t('contact.phone') }}</label>
             <br />
-            <input type="text" name="phone" id="phone" value class="input" />
+            <input type="text" name="phone" ref="phone" value class="input" />
           </p>
         </div>
         <p id="emailMessage">
@@ -30,7 +30,7 @@
             <span class="required">*</span>
           </label>
           <br />
-          <textarea name="message" id="message" class="input"></textarea>
+          <textarea name="message" ref="message" class="input"></textarea>
         </p>
 
         <input
@@ -59,10 +59,10 @@ export default {
   computed: mapState(["data"]),
   methods: {
     sendMessage() {
-      var name = document.getElementById("name");
-      var message = document.getElementById("message");
-      var email = document.getElementById("email");
-      var phone = document.getElementById("phone");
+      const name = this.$refs.name;
+      const message = this.$refs.message;
+      const email = this.$refs.email;
+      const phone = this.$refs.phone;
       name.className = "input";
       message.className = "input";
       if (name.value == "") {
@@ -79,8 +79,7 @@ export default {
         email: email.value,
         phone: phone.value
       };
-      var me = this;
-      axios.post("/message/send", data).then(function(data) {
+      axios.post("/message/send", data).then(data => {
         Toast(me.data.contact.send_success_msg);
         window.console.log(data);
       });
