@@ -11,7 +11,11 @@ export default {
     title: 'Skills',
     skills: [
       {
-        name: "Spring Boot、Spring Cloud",
+        name: "Java、Spring Boot、Spring Cloud",
+        weight: 100
+      },
+      {
+        name: "Mysql、Postgres、Redis",
         weight: 100
       },
       {
@@ -19,15 +23,11 @@ export default {
         weight: 100
       },
       {
-        name: "Mysql、Mongodb、Redis",
-        weight: 100
-      },
-      {
         name: "RabbitMQ",
         weight: 100
       },
       {
-        name: "Maven",
+        name: "Gradle、Maven",
         weight: 100
       },
       {
@@ -35,12 +35,8 @@ export default {
         weight: 100
       },
       {
-        name: "Vue、Jquery、Bootstrap",
+        name: "React、Vue、Nodejs、Jquery、Bootstrap",
         weight: 100
-      },
-      {
-        name: "JavaFx、Android、Electron",
-        weight: 90
       },
       {
         name: "Linux",
@@ -49,7 +45,11 @@ export default {
       {
         name: "Docker、Docker Compose",
         weight: 90
-      }
+      },
+      {
+        name: "JavaFx、Android、Electron",
+        weight: 80
+      },
     ]
   },
   job: {
@@ -71,9 +71,9 @@ export default {
       role: 'Senior Developer',
       date: '2017/03 - 2019-01'
     }, {
-      name: 'Zhongwu Zhifu CO.,LTD',
+      name: 'Zide CO.,LTD',
       role: 'Senior Developer',
-      date: '2019/02 - 2019-12'
+      date: '2019/02 - 2022-12'
     }]
   },
   school: {
@@ -91,14 +91,14 @@ export default {
   project: {
     title: 'Project',
     projects: [{
-      name: 'Kyd Management Platform',
-      link: 'https://admin.kuaiyundi.com'
+      name: 'Proclivity Management Platform',
+      link: 'https://dev.layerrx.proclivitysystems.com/'
     }, {
       name: 'Golden Rainforest Online Store',
-      link: 'http://jmalltest.jinseyulin.cn:8099'
+      link: 'http://jmall.jinseyulin.cn'
     }, {
       name: 'Golden Rainforest Electronic Contract Platform',
-      link: 'http://contract.jsyledu.cc:8099'
+      link: 'http://contract.jinseyulin.cn'
     }, {
       name: 'Putian Medicines Trading Platform',
       link: 'https://www.yaoxie.com'

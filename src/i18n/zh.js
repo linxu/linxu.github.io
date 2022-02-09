@@ -1,6 +1,6 @@
 export default {
   message: {
-    copyright: '2019 - Designed and developed by Linxu'
+    copyright: '2022 - Designed and developed by Linxu'
   },
   bio: {
     name: '林 旭',
@@ -11,7 +11,11 @@ export default {
     title: '专业技能',
     skills: [
       {
-        name: "熟练Spring Boot、Spring Cloud",
+        name: "熟练Java、Spring Boot、Spring Cloud",
+        weight: 100
+      },
+      {
+        name: "熟练Mysql、Postgres、Redis",
         weight: 100
       },
       {
@@ -19,15 +23,11 @@ export default {
         weight: 100
       },
       {
-        name: "熟练Mysql、Mongodb、Redis",
-        weight: 100
-      },
-      {
         name: "熟练RabbitMQ",
         weight: 100
       },
       {
-        name: "熟练Maven",
+        name: "熟练Gradle、Maven",
         weight: 100
       },
       {
@@ -35,11 +35,11 @@ export default {
         weight: 100
       },
       {
-        name: "熟练Vue、Jquery、Bootstrap",
+        name: "熟练React、Vue、Nodejs、Jquery、Bootstrap",
         weight: 100
       },
       {
-        name: "熟悉JavaFx、Android、Electron",
+        name: "熟悉Docker、Docker Compose",
         weight: 90
       },
       {
@@ -47,9 +47,9 @@ export default {
         weight: 90
       },
       {
-        name: "熟悉Docker、Docker Compose",
-        weight: 90
-      }
+        name: "熟悉JavaFx、Android、Electron",
+        weight: 80
+      },
     ]
   },
   job: {
@@ -71,9 +71,9 @@ export default {
       role: '高级工程师',
       date: '2017/03 - 2019-01'
     }, {
-      name: '中物智福股份有限公司',
+      name: '咨德网络科技有限公司',
       role: '高级工程师',
-      date: '2019/02 - 2019-12'
+      date: '2019/02 - 2022-02'
     }]
   },
   school: {
@@ -91,14 +91,14 @@ export default {
   project: {
     title: '项目经验',
     projects: [{
-      name: '快运滴管理平台',
-      link: 'https://admin.kuaiyundi.com'
+      name: 'Proclivity管理平台',
+      link: 'https://dev.layerrx.proclivitysystems.com/'
     }, {
       name: '金色雨林线上商城',
-      link: 'http://jmalltest.jinseyulin.cn:8099'
+      link: 'http://jmall.jinseyulin.cn'
     }, {
       name: '金色雨林电子合同平台',
-      link: 'http://contract.jsyledu.cc:8099'
+      link: 'http://contract.jinseyulin.cn'
     }, {
       name: '普天药械交易网',
       link: 'https://www.yaoxie.com'
