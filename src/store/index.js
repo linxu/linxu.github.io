@@ -7,10 +7,18 @@ const store = new Vuex.Store({
     state: {
         data: window.i18n.getLocaleMessage(window.i18n.locale)
     },
-    mutations: {
-        changeLang (state) {
-            state.data = window.i18n.getLocaleMessage(window.i18n.locale)
+    actions: {
+        changeLang (context, value) {
+            context.commit("changeLang", value);
         }
+    },
+    mutations: {
+        changeLang (state, value) {
+            state.data = window.i18n.getLocaleMessage(value)
+        }
+    },
+    getters: {
+        
     }
 })
 

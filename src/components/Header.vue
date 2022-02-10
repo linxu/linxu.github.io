@@ -1,5 +1,5 @@
 <template>
-  <header id="sticker">
+  <header id="sticker" ref="sticker">
     <h2 id="titleName" class="sectionHead">{{ $t('bio.name') }}</h2>
     <!-- <Socials /> -->
   </header>
@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      var sticker = document.getElementById("sticker");
+      var sticker = this.$refs.sticker;
       Velocity(sticker, "stop", true);
       var scrollTop =
         document.documentElement.scrollTop || document.body.scrollTop;

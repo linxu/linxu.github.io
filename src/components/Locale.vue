@@ -12,7 +12,7 @@ export default {
   methods: {
     changeLang(lang) {
       this.$i18n.locale = lang;
-      this.$store.commit('changeLang');
+      this.$store.dispatch('changeLang', lang);
     }
   }
 };
