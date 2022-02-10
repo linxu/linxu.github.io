@@ -11,4 +11,7 @@ new Vue({
   store,
   router,
   render: h => h(App),
+  beforeCreate(){
+    this.$store.commit("changeLang", this.$i18n.getLocaleMessage(this.$i18n.locale));
+  }
 }).$mount('#app')

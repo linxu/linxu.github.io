@@ -12,7 +12,7 @@ export default {
   methods: {
     changeLang(lang) {
       this.$i18n.locale = lang;
-      this.$store.dispatch('changeLang', lang);
+      this.$store.dispatch('changeLang', this.$i18n.getLocaleMessage(lang));
     }
   }
 };
