@@ -1,11 +1,11 @@
 export default {
   message: {
-    copyright: '2019 - Designed and developed by Linxu'
+    copyright: '2022 - Designed and developed by Linxu'
   },
   bio: {
     name: 'Linxu',
-    position: 'Java Senior Developer / Architect',
-    introduce: 'I graduated from Fuzhou University, majoring in software engineering. I started to work in software development in 2009, and I do well. Currently settled in Xiamen.'
+    position: 'Java Senior Developer / Frontend Developer / Architect',
+    introduce: 'I graduated from Fuzhou University with a major in software engineering. I have been engaged in Java-related software development since 2009, mainly engaged in the development of e-commerce systems, background management systems and interfaces. I work steadfast and reliable, and currently live in Xiamen.'
   },
   skill: {
     title: 'Skills',
@@ -19,11 +19,7 @@ export default {
         weight: 100
       },
       {
-        name: "Shiro",
-        weight: 100
-      },
-      {
-        name: "RabbitMQ",
+        name: "Shiro、Jwt",
         weight: 100
       },
       {
@@ -35,12 +31,8 @@ export default {
         weight: 100
       },
       {
-        name: "React、Vue、Nodejs、Jquery、Bootstrap",
+        name: "React、Vue、Jquery、Bootstrap",
         weight: 100
-      },
-      {
-        name: "Linux",
-        weight: 90
       },
       {
         name: "Docker、Docker Compose",
@@ -55,24 +47,24 @@ export default {
   job: {
     title: 'Experience',
     jobs: [{
-      name: 'Fujian Star-net Communication CO.,LTD',
-      role: 'Junior Developer',
+      name: 'Star-net Communication CO.,LTD',
+      role: 'Java Junior Developer',
       date: '2009/08 - 2012/09'
     }, {
-      name: 'Xiamen Suryani Technology CO.,LTD',
-      role: 'Intermediate Developer',
-      date: '2012/10 - 2014/1'
+      name: 'Suryani Technology CO.,LTD',
+      role: 'Java Intermediate Developer',
+      date: '2012/10 - 2014/01'
     }, {
       name: 'Putian E-commerce CO.,LTD',
-      role: 'Senior Developer',
+      role: 'Java Senior Developer',
       date: '2014/12 - 2017/02'
     }, {
       name: 'Golden rainforest Education CO.,LTD',
-      role: 'Senior Developer',
+      role: 'Java Senior Developer',
       date: '2017/03 - 2019-01'
     }, {
-      name: 'Zide CO.,LTD',
-      role: 'Senior Developer',
+      name: 'Zide Network Technology CO.,LTD',
+      role: 'Java/React Senior Developer',
       date: '2019/02 - 2022-12'
     }]
   },
@@ -102,6 +94,11 @@ export default {
     }, {
       name: 'Putian Medicines Trading Platform',
       link: 'https://www.yaoxie.com'
+    }, {
+      name: 'Haixi Morning Post supermarket e-commerce platform',
+      link: 'http://www.cbcs168.com'
+    }, {
+      name: 'Xifan desktop management system'
     }]
   },
   contact: {

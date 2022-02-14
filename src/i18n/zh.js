@@ -4,8 +4,8 @@ export default {
   },
   bio: {
     name: '林 旭',
-    position: 'Java高级工程师 / 架构师',
-    introduce: '本人毕业于福州大学，软件工程专业，2009年开始从事软件开发工作，做事靠谱。目前定居在厦门。'
+    position: 'Java高级工程师 / 前端工程师 / 架构师',
+    introduce: '本人毕业于福州大学，软件工程专业，2009年开始从事Java相关的软件开发工作，主要从事电商系统，后台管理系统以及接口的开发工作。做事踏实靠谱，目前定居在厦门。'
   },
   skill: {
     title: '专业技能',
@@ -19,11 +19,7 @@ export default {
         weight: 100
       },
       {
-        name: "熟练Shiro",
-        weight: 100
-      },
-      {
-        name: "熟练RabbitMQ",
+        name: "熟练Shiro、Jwt",
         weight: 100
       },
       {
@@ -35,15 +31,11 @@ export default {
         weight: 100
       },
       {
-        name: "熟练React、Vue、Nodejs、Jquery、Bootstrap",
+        name: "熟练React、Vue、Jquery、Bootstrap",
         weight: 100
       },
       {
         name: "熟悉Docker、Docker Compose",
-        weight: 90
-      },
-      {
-        name: "熟悉Linux",
         weight: 90
       },
       {
@@ -56,23 +48,23 @@ export default {
     title: '工作经历',
     jobs: [{
       name: '星网锐捷通讯股份有限公司',
-      role: '初级工程师',
+      role: 'Java初级工程师',
       date: '2009/08 - 2012/09'
     }, {
       name: '舜亚科技有限公司',
-      role: '中级工程师',
-      date: '2012/10 - 2014/1'
+      role: 'Java中级工程师',
+      date: '2012/10 - 2014/01'
     }, {
       name: '莆田电商股份有限公司',
-      role: '高级工程师',
+      role: 'Java高级工程师',
       date: '2014/12 - 2017/02'
     }, {
       name: '金色雨林教育科技有限公司',
-      role: '高级工程师',
+      role: 'Java高级工程师',
       date: '2017/03 - 2019-01'
     }, {
       name: '咨德网络科技有限公司',
-      role: '高级工程师',
+      role: 'Java/React高级工程师',
       date: '2019/02 - 2022-02'
     }]
   },
@@ -102,6 +94,11 @@ export default {
     }, {
       name: '普天药械交易网',
       link: 'https://www.yaoxie.com'
+    }, {
+      name: '海西晨报超市电商平台',
+      link: 'http://www.cbcs168.com'
+    }, {
+      name: '曦帆桌面管理系统'
     }]
   },
   contact: {

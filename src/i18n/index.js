@@ -6,7 +6,7 @@ import zh from '@/i18n/zh'
 Vue.use(VueI18n)
 
 const i18n = new VueI18n({
-    locale: 'en',
+    locale: 'zh',
     messages: {
       en: en,
       zh: zh
