@@ -11,7 +11,7 @@ export default {
     title: 'Skills',
     skills: [
       {
-        name: "Java、Spring Boot、Spring Cloud",
+        name: "Java、Dropwizard、Spring Boot、Spring Cloud",
         weight: 100
       },
       {

@@ -11,7 +11,7 @@ export default {
     title: '专业技能',
     skills: [
       {
-        name: "熟练Java、Spring Boot、Spring Cloud",
+        name: "熟练Java、Dropwizard、Spring Boot、Spring Cloud",
         weight: 100
       },
       {
