@@ -53,7 +53,7 @@ export default {
     }, {
       name: 'Suryani Technology CO.,LTD',
       role: 'Java Intermediate Developer',
-      date: '2012/10 - 2014/01'
+      date: '2012/10 - 2014/11'
     }, {
       name: 'Putian E-commerce CO.,LTD',
       role: 'Java Senior Developer',

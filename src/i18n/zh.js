@@ -53,7 +53,7 @@ export default {
     }, {
       name: '舜亚科技有限公司',
       role: 'Java中级工程师',
-      date: '2012/10 - 2014/01'
+      date: '2012/10 - 2014/11'
     }, {
       name: '莆田电商股份有限公司',
       role: 'Java高级工程师',
