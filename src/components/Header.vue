@@ -1,17 +1,17 @@
 <template>
   <header id="sticker" ref="sticker">
     <h2 id="titleName" class="sectionHead">{{ $t('bio.name') }}</h2>
-    <!-- <Socials /> -->
+    <Socials />
   </header>
 </template>
 
 <script>
 import Velocity from "velocity-animate";
-// import Socials from "./Socials.vue";
+import Socials from "./Socials.vue";
 export default {
   name: "Header",
   components: {
-    // Socials
+    Socials
   },
   created: function() {
     window.addEventListener("scroll", this.handleScroll);
