@@ -108,6 +108,7 @@ export default {
     phone: '电话',
     message: '消息',
     sendBtn: '发送消息',
-    send_success_msg: '消息发送成功'
+    send_success_msg: '消息发送成功',
+    send_fail_msg: '服务不可用, 消息发送失败.'
   }
 }

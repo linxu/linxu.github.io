@@ -108,6 +108,7 @@ export default {
     phone: 'Phone',
     message: 'Message',
     sendBtn: 'SEND MESSAGE',
-    send_success_msg: 'SEND MESSAGE SUCCESS'
+    send_success_msg: 'SEND MESSAGE SUCCESS',
+    send_fail_msg: 'service unavailable, message sending failed.'
   }
 }

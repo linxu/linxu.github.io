@@ -82,12 +82,14 @@ export default {
         email: email.value,
         phone: phone.value
       };
-      axios.post("/message/send", data).then(data => {
-        Toast(this.data.contact.send_success_msg);
-        window.console.log(data);
-      }).catch(error => {
-        window.console.log(error);
-      });
+      window.console.log(data);
+      Toast(this.data.contact.send_fail_msg);
+      // axios.post("/message/send", data).then(data => {
+      //   Toast(this.data.contact.send_success_msg);
+      //   window.console.log(data);
+      // }).catch(error => {
+      //   window.console.log(error);
+      // });
     }
   }
 };
